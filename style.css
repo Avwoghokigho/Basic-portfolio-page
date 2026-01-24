@@ -150,7 +150,7 @@ img{
 }
 .projects .work{
     margin: 10px;
-    width: 350px;
+    width: 300px;
     padding: 10px;
     border-radius: 12px;
     border: 1px solid teal;
@@ -164,8 +164,8 @@ img{
     box-shadow: 5px 5px 15px teal;
 }
 .projects .work img{
-    height: 200px;
-    width: 350px;
+    height: 150px;
+    width: 300px;
     border-radius: 12px;
 }
 .projects .work .btn{
