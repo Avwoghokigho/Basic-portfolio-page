@@ -2,8 +2,20 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     color: #F3F7F8;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+        scale: 0.5;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
 }
 a{
     text-decoration: none;
@@ -21,6 +33,14 @@ header{
     color: Teal;
     border-bottom: 1px solid teal;
     background-color: black;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+main{
+    margin-top: 81px;
 }
 img{
     width: 350px;
@@ -67,6 +87,17 @@ img{
     padding: 30px 5px;
     border-bottom: 1px solid teal;
 }
+.home img{
+    padding: 20px;
+}
+.btn{
+    background-color: teal;
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid teal;
+    border-radius: 12px;
+    margin: 2px;
+}
 .about{
     display: flex;
     flex-direction: column;
@@ -74,9 +105,12 @@ img{
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid teal;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .skills span{
-    background-color: #8496A2;
+    background-color: teal;
     padding: 5px 10px;
     border-radius: 21px;
     margin: 3px;
@@ -87,6 +121,16 @@ img{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+}
+.abc img{
+    border-radius: 12px;
+    height: 250px;
+    width: 400px;
+    transition: all 2s ease 0s;
+}
+.abc img:hover{
+    scale: 1.034;
+    box-shadow: 5px 5px 15px teal;
 }
 .projects{
     display: flex;
@@ -105,6 +149,9 @@ img{
     border-radius: 12px;
     border: 1px solid teal;
     transition: all 2s ease 0s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .projects .work:hover{
     scale: 1.034;
@@ -112,23 +159,26 @@ img{
 }
 .projects .work img{
     height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    width: 350px;
+    border-radius: 12px;
 }
-.projects .work button{
+.projects .work .btn{
     background-color: teal;
     width: 100px;
     padding: 5px 10px;
     border: 1px solid teal;
     border-radius: 12px;
     margin: 2px;
-}
+}.btn .bi{color: white;}
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid teal;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .c-div{
     display: flex;

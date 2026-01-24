@@ -5,7 +5,7 @@ document.getElementById('year').innerText = date;
 
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
-const vex = document.querySelector("a");
+const vex = document.querySelector(".a");
 
 navbarToggle.addEventListener('click',()=>{
     navbarToggle.classList.toggle('active');
