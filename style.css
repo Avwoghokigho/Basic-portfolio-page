@@ -109,6 +109,12 @@ img{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 .skills span{
     background-color: teal;
     padding: 5px 10px;
